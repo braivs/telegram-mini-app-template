@@ -1,10 +1,10 @@
-import type { ComponentType, JSX } from 'react';
+import type {ComponentType, JSX} from 'react'
 
-import { IndexPage } from '@/pages/IndexPage/IndexPage';
-import { InitDataPage } from '@/pages/InitDataPage/InitDataPage';
-import { LaunchParamsPage } from '@/pages/LaunchParamsPage/LaunchParamsPage.tsx';
-import { ThemeParamsPage } from '@/pages/ThemeParamsPage/ThemeParamsPage.tsx';
-import { TONConnectPage } from '@/pages/TONConnectPage/TONConnectPage';
+import {IndexPage} from '@/pages/IndexPage/IndexPage'
+import {InitDataPage} from '@/pages/InitDataPage/InitDataPage'
+import {LaunchParamsPage} from '@/pages/LaunchParamsPage/LaunchParamsPage.tsx'
+import {ThemeParamsPage} from '@/pages/ThemeParamsPage/ThemeParamsPage.tsx'
+import {TONConnectPage} from '@/pages/TONConnectPage/TONConnectPage'
 
 interface Route {
   path: string;
@@ -15,6 +15,7 @@ interface Route {
 
 export const routes: Route[] = [
   { path: '/', Component: IndexPage },
+  // { path: '/', Component: Simple },
   { path: '/init-data', Component: InitDataPage, title: 'Init Data' },
   { path: '/theme-params', Component: ThemeParamsPage, title: 'Theme Params' },
   { path: '/launch-params', Component: LaunchParamsPage, title: 'Launch Params' },
